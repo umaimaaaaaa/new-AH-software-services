@@ -4,7 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AH Software Services</title>
-  <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
 </head>
 <body>
 
@@ -13,16 +16,15 @@
     <nav class="navbar">
       <div class="logo">AH Software Services</div>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="http://127.0.0.1:5000/team">Home</a></li>
+        <li><a href="http://127.0.0.1:5000/prices">Prices</a></li>
+        <li><a href="http://127.0.0.1:5000/about">About</a></li>
+        <li><a href="http://127.0.0.1:5000/contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-
- <section class="hero-new">
+  <section class="hero-new">
   <div class="hero-content-new">
     <h1>Top Software Solutions for Your Business</h1>
     <p>Crafting custom software solutions that drive innovation, efficiency, and business growth.</p>
@@ -76,11 +78,12 @@
 
 <section class="split-section">
  
-  <div class="left-box">
+  <div class="left-box right-box">
     <h2>Why Choose AH Software?</h2>
     <p>
       We specialize in custom-built digital solutions that solve real business challenges. With a passion for innovation and a focus on quality, we deliver products that elevate your brand and drive success.
     </p>
+    <img src="https://crmtechindia.com/wp-content/uploads/2023/04/Customer-Service-Software-1.png" alt="How we help">
   </div>
 
 
@@ -101,9 +104,9 @@
         <img src="https://www.datocms-assets.com/99439/1685519293-wat-is-customer-service-software-header-2048x1151.png" alt="What We Do">
       </div>
       <div class="text">
-        <h2>What We Do</h2>
+        <h2>Our Mission</h2>
         <p>
-          AH Software Services specializes in developing custom software that solves real-world business problems. We deliver tailored web apps, mobile apps, and enterprise solutions to help you work smarter, grow faster, and stay competitive.
+          Our mission is to simplify technology for businesses. We help startups, enterprises, and service providers streamline operations, grow digitally, and solve real-world problems through tailored software development.
         </p>
       </div>
     </div>
@@ -111,6 +114,20 @@
 </section>
 
   
+<section class="follow-us">
+  <img src="https://www.findmycrm.com/hs-fs/hubfs/socail-media-customer-service.jpg.jpg?width=688&height=353&name=socail-media-customer-service.jpg.jpg" alt="Follow Us Image" class="follow-image">
+
+  <h3>Follow Us</h3>
+
+  <div class="social-icons">
+   <a href="https://instagram.com/yourhandle" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://facebook.com/yourhandle" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://linkedin.com/in/yourhandle" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+</section>
+
+
+
   <footer>
     <p>&copy; 2025 AH Software Services. All rights reserved.</p>
   </footer>

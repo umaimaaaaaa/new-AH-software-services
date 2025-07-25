@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AH Software Services</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">AH Software Services</div>
+      <ul class="nav-links">
+        <li><a href="http://127.0.0.1:5000/team">Home</a></li>
+        <li><a href="http://127.0.0.1:5000/prices">Prices</a></li>
+        <li><a href="http://127.0.0.1:5000/about">About</a></li>
+        <li><a href="http://127.0.0.1:5000/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+ <section class="hero-new">
+  <div class="hero-content-new">
+    <h1>Get In Touch With Us</h1>
+    <p>Whether you have a question, need support, or want to discuss a project — we're just a message away. Our team is here to help you with all your software needs.</p>
+    <button class="cta-btn">
+      Send a Message →
+    </button>
+  </div>
+  <div class="hero-image-new1">
+    <img src="https://media.licdn.com/dms/image/v2/D4D12AQE3ygdrFMVY-g/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1723951773116?e=2147483647&v=beta&t=fv6RkfHVp0AY6RLbWn0aqFifgDFuW2AisPi-Fvka-oo" alt="Customer Support" />
+  </div>
+</section>
+
+
+<section class="contact-form-section">
+  <h2>Contact Form</h2>
+  <form action="/submit_form" method="POST" class="contact-form">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Your Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit" class="cta-btn">Send Message</button>
+  </form>
+</section>
+
+<section class="follow-us">
+  <img src="https://www.findmycrm.com/hs-fs/hubfs/socail-media-customer-service.jpg.jpg?width=688&height=353&name=socail-media-customer-service.jpg.jpg" alt="Follow Us Image" class="follow-image">
+
+  <h3>Follow Us</h3>
+
+  <div class="social-icons">
+   <a href="https://instagram.com/yourhandle" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://facebook.com/yourhandle" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://linkedin.com/in/yourhandle" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+</section>
+
+
+  
+
+  
+  <footer>
+    <p>&copy; 2025 AH Software Services. All rights reserved.</p>
+  </footer>
+
+  <script>
+console.log("Welcome to AH Software Services!");
+
+  </script>
+</body>
+</html>
