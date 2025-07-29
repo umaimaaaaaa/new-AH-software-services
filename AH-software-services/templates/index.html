@@ -10,35 +10,10 @@
 </head>
 <body>
 
+ {% include 'nav.html' %}
+  
 
-  <header>
-    <nav class="navbar">
-      <div class="logo">AH Software Services</div>
-      <ul class="nav-links">
-        <li><a href="http://127.0.0.1:5000/team">Home</a></li>
-        <li><a href="http://127.0.0.1:5000/prices">Prices</a></li>
-        <li><a href="http://127.0.0.1:5000/about">About</a></li>
-        <li><a href="http://127.0.0.1:5000/contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-
- <section class="hero-new">
-  <div class="hero-content-new">
-    <h1>Top Software Solutions for Your Business</h1>
-    <p>Crafting custom software solutions that drive innovation, efficiency, and business growth.</p>
-    <button class="cta-btn">
-      Explore Our Services →
-    </button>
-  </div>
-  <div class="hero-image-new">
-    <img src="https://etimg.etb2bimg.com/photo/99033076.cms" alt="Customer Support" />
-  </div>
-</section>
-
-
-
+ {% include 'hero.html' with context %}
 
   <section class="services">
     <h2>Our Services</h2>
@@ -63,10 +38,8 @@
   </section>
 
   
-  <footer>
-    <p>&copy; 2025 AH Software Services. All rights reserved.</p>
-  </footer>
 
+{% include 'footer.html' %}
   <script>
 console.log("Welcome to AH Software Services!");
   </script>

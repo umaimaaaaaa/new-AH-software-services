@@ -12,20 +12,10 @@
 <body>
 
 
-  <header>
-    <nav class="navbar">
-      <div class="logo">AH Software Services</div>
-      <ul class="nav-links">
-        <li><a href="http://127.0.0.1:5000/team">Home</a></li>
-        <li><a href="http://127.0.0.1:5000/prices">Prices</a></li>
-        <li><a href="http://127.0.0.1:5000/about">About</a></li>
-        <li><a href="http://127.0.0.1:5000/contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+{% include 'nav.html' %}
 
 
-  <section class="hero-new">
+  <section class="hero-new fade-in">
   <div class="hero-content-new">
     <h1>Top Software Solutions for Your Business</h1>
     <p>Crafting custom software solutions that drive innovation, efficiency, and business growth.</p>
@@ -39,38 +29,57 @@
 </section>
 
 
+<section class="carousel-wrapper">
+  <div class="carousel">
+    <div class="carousel-track">
+      <img src="https://neuroleadership.com/wp-content/uploads/2023/04/A-Brain-Friendly-Guide-to-Using-AI-at-Work-1.png" alt="AI Work">
+      <img src="https://miro.medium.com/v2/resize:fit:780/0*0sd4JGVeodRiVNtR.jpg" alt="AI Model">
+      <img src="https://img.freepik.com/premium-vector/augmented-intelligence-artificial-cognitive-robotics-technological-singularity-concept-with-tiny-people-cutting-edge-technology-vector-illustration-set-high-tech-machine-learning-metaphor_269730-1003.jpg" alt="AI Robot">
+      <!-- Duplicated for smooth infinite loop -->
+      <img src="https://neuroleadership.com/wp-content/uploads/2023/04/A-Brain-Friendly-Guide-to-Using-AI-at-Work-1.png" alt="AI Work Duplicate">
+      <img src="https://miro.medium.com/v2/resize:fit:780/0*0sd4JGVeodRiVNtR.jpg" alt="AI Model Duplicate">
+      <img src="https://img.freepik.com/premium-vector/augmented-intelligence-artificial-cognitive-robotics-technological-singularity-concept-with-tiny-people-cutting-edge-technology-vector-illustration-set-high-tech-machine-learning-metaphor_269730-1003.jpg" alt="AI Robot Duplicate">
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
 <section class="services">
   <h2>Our Services</h2>
   <div class="card-container">
-    <div class="card">
+    <div class="card fade-in delay-1">
       <h3>Web Development</h3>
       <p>Responsive websites and web apps tailored to your needs.</p>
     </div>
-    <div class="card">
+    <div class="card fade-in delay-2">
       <h3>Mobile Apps</h3>
       <p>Android and iOS mobile applications with modern UI/UX.</p>
     </div>
-    <div class="card">
+    <div class="card fade-in delay-3">
       <h3>Machine Learning</h3>
       <p>AI solutions tailored to your business.</p>
     </div>
-    <div class="card">
+    <div class="card fade-in delay-4">
       <h3>Custom Software</h3>
       <p>Tailor-made software solutions for businesses of all sizes.</p>
     </div>
-    <div class="card">
+    <div class="card fade-in delay-5">
       <h3>Data Science</h3>
       <p>Make informed decisions with powerful insights from your data.</p>
     </div>
-    <div class="card">
+    <div class="card fade-in delay-6">
       <h3>Blockchain</h3>
-      <p> Secure and automated blockchain agreements.</p>
+      <p>Secure and automated blockchain agreements.</p>
     </div>
-    <div class="card">
+    <div class="card fade-in delay-7">
       <h3>Maintenance</h3>
       <p>Ongoing support and updates for your apps and software.</p>
     </div>
-    <div class="card">
+    <div class="card fade-in delay-8">
       <h3>Consulting</h3>
       <p>Expert advice to guide your technology and business strategy.</p>
     </div>
@@ -130,9 +139,7 @@
 
 
 
-  <footer>
-    <p>&copy; 2025 AH Software Services. All rights reserved.</p>
-  </footer>
+  {% include 'footer.html' %}
 
   <script>
   function changeText() {

@@ -12,17 +12,7 @@
 <body>
 
 
-  <header>
-    <nav class="navbar">
-      <div class="logo">AH Software Services</div>
-      <ul class="nav-links">
-        <li><a href="http://127.0.0.1:5000/team">Home</a></li>
-        <li><a href="http://127.0.0.1:5000/prices">Prices</a></li>
-        <li><a href="http://127.0.0.1:5000/about">About</a></li>
-        <li><a href="http://127.0.0.1:5000/contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+{% include 'nav.html' %}
 
 
  <section class="hero-new">
@@ -174,9 +164,8 @@
 
   
   
-  <footer>
-    <p>&copy; 2025 AH Software Services. All rights reserved.</p>
-  </footer>
+  {% include 'footer.html' %}
+
 
  <script>
 

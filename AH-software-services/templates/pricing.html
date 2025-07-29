@@ -12,17 +12,7 @@
 <body>
 
 
-  <header>
-    <nav class="navbar">
-      <div class="logo">AH Software Services</div>
-      <ul class="nav-links">
-        <li><a href="http://127.0.0.1:5000/team">Home</a></li>
-        <li><a href="http://127.0.0.1:5000/prices">Prices</a></li>
-        <li><a href="http://127.0.0.1:5000/about">About</a></li>
-        <li><a href="http://127.0.0.1:5000/contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+{% include 'nav.html' %}
 
 
  <section class="hero-new">
@@ -74,29 +64,41 @@
     </div>
   </section>
 
-  <section class="faq-section">
-  <h2>Frequently Asked Questions</h2>
-  <div class="faq-card-container">
-    <div class="faq-card">
-      <details>
-        <summary>What services are included in each plan?</summary>
-        <p>Each plan includes web development, maintenance, and customer support tailored to your business needs.</p>
-      </details>
+  <section class="faq-chat-style">
+  <h2>Got Questions? Let’s Chat</h2>
+  <div class="chat-faq-container">
+
+    <div class="chat-bubble user">
+      I’ve got an idea but no clue where to start — can you help?
     </div>
-    <div class="faq-card">
-      <details>
-        <summary>Can I customize my package?</summary>
-        <p>Yes! All plans can be customized according to your project size, features, and budget.</p>
-      </details>
+    <div class="chat-bubble bot">
+      Absolutely! We turn your wildest ideas into real products. No tech skills needed — just your vision.
     </div>
-    <div class="faq-card">
-      <details>
-        <summary>Is support included?</summary>
-        <p>Yes, we provide 24/7 customer support for all ongoing projects and maintenance plans.</p>
-      </details>
+
+    <div class="chat-bubble user">
+      Can you make my site faster than instant noodles?
     </div>
+    <div class="chat-bubble bot">
+      Heck yes. We optimize every pixel and asset like our lives depend on it.
+    </div>
+
+    <div class="chat-bubble user">
+      Is there life after launch?
+    </div>
+    <div class="chat-bubble bot">
+      Totally. We provide updates, fixes, and late-night debugging therapy.
+    </div>
+
+    <div class="chat-bubble user">
+      What if I don’t speak tech?
+    </div>
+    <div class="chat-bubble bot">
+      That’s perfect. We’ll never bore you with jargon — just results.
+    </div>
+
   </div>
 </section>
+
 
   
   <section class="pricing-contact-cta">
@@ -106,9 +108,8 @@
 </body>
 </html>
   
-  <footer>
-    <p>&copy; 2025 AH Software Services. All rights reserved.</p>
-  </footer>
+  {% include 'footer.html' %}
+
 
   <script>
 console.log("Welcome to AH Software Services!");
